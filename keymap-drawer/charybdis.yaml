@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BAS:
-  - {t: ▽, type: trans}
+  - ''
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - {t: ▽, type: trans}
-  - TAB
+  - ''
+  - ''
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT GUI}
-  - ''''
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - Z
   - X
   - C
@@ -36,14 +36,14 @@ layers:
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
-  - {t: ESCAPE, h: NAV}
+  - ''
+  - {t: TAB, h: NAV}
   - {t: SPACE, h: NUM}
   - L CLK
   - {t: RET, h: SET}
   - {t: BACK SPACE, s: DELETE}
   NUM:
-  - {t: ▽, type: trans}
+  - ''
   - '-'
   - +
   - (
@@ -54,8 +54,8 @@ layers:
   - ']'
   - '*'
   - '&'
-  - {t: ▽, type: trans}
-  - PRINT SCREEN
+  - ''
+  - ''
   - '1'
   - '2'
   - '3'
@@ -66,8 +66,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '#'
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - $
   - '@'
   - '|'
@@ -78,26 +78,26 @@ layers:
   - '}'
   - '%'
   - \
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: NUM, type: held}
   - {t: ▽, type: trans}
   - ENTER
   - BSPC
   NAV:
-  - {t: ▽, type: trans}
+  - ''
   - PAGE DOWN
   - HOME
   - END
   - PG UP
+  - PRINT SCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOL DN
+  - ''
   - LEFT GUI
   - LEFT ALT
   - LCTRL
@@ -109,7 +109,7 @@ layers:
   - RIGHT ALT
   - RIGHT GUI
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - F1
   - F2
   - F3
@@ -253,9 +253,6 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
 combos:
-- p: [12, 23]
-  k: {t: CAD, h: toggle}
-  l: [BAS, CAD]
 - p: [16, 38]
   k: R CLK
   l: [BAS]
@@ -268,3 +265,9 @@ combos:
   k: Alt+Ctl+ DELETE
 - p: [37, 31, 32]
   k: CAPS WORD
+- p: [2, 3]
+  k: ESCAPE
+- p: [9, 8]
+  k: ''''
+- p: [7, 8]
+  k: '"'
