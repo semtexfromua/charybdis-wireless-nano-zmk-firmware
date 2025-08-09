@@ -227,12 +227,12 @@
 
         apostroph {
             bindings = <&kp SQT>;
-            key-positions = <9 8>;
+            key-positions = <32 33>;
         };
 
         dblapostroph {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <7 8>;
+            key-positions = <32 31>;
         };
     };
 
@@ -292,10 +292,10 @@
         SET {
             display-name = "SET";
             bindings = <
-&trans      &trans        &trans        &bootloader   &sys_reset    &trans          &trans  &sys_reset      &bootloader  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &studio_unlock  &trans       &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans          &trans       &trans  &trans  &trans
-                                        &trans        &trans        &trans          &trans  &trans
+&trans  &trans      &trans        &bootloader   &sys_reset    &trans          &trans  &sys_reset      &bootloader  &trans  &trans  &trans
+&none   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &trans  &studio_unlock  &trans       &trans  &trans  &trans
+&trans  &trans      &trans        &trans        &trans        &trans          &trans  &trans          &trans       &trans  &trans  &trans
+                                  &trans        &trans        &trans          &trans  &trans
             >;
         };
     };
