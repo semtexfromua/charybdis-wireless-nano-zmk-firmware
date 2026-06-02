@@ -42,6 +42,9 @@ layers:
   - L CLK
   - {t: RET, h: SET}
   - {t: BACK SPACE, s: DELETE}
+  - R CLK
+  - LALT
+  - DEL
   NUM:
   - ''
   - '-'
@@ -84,6 +87,9 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NAV:
   - ''
   - PAGE DOWN
@@ -126,6 +132,9 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - DEV TOOLS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   CAD:
   - {t: ▽, type: trans}
   - Q
@@ -168,6 +177,9 @@ layers:
   - L CLK
   - ENTER
   - BACK SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   MOU:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,6 +220,9 @@ layers:
   - R CLK
   - {t: ▽, type: trans}
   - L CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SET:
@@ -251,6 +266,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [16, 38]
