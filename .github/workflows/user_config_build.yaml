@@ -256,22 +256,6 @@ jobs:
           name: firmware-charybdis-qwerty-dongle
           delete-merged: true
 
-      - name: Upload Charybdis ZMK Firmware (Colemak BT)
-        continue-on-error: true
-        uses: actions/upload-artifact/merge@v4
-        with:
-          pattern: artifact-charybdis_colemak_{left,right}
-          name: firmware-charybdis-colemak
-          delete-merged: true
-
-      - name: Upload Charybdis ZMK Firmware (Colemak Dongle)
-        continue-on-error: true
-        uses: actions/upload-artifact/merge@v4
-        with:
-          pattern: artifact-charybdis_colemak_dongle*
-          name: firmware-charybdis-colemak-dongle
-          delete-merged: true
-
       - name: Upload Firmware Reset (Nano v2)
         continue-on-error: true
         uses: actions/upload-artifact/merge@v4
