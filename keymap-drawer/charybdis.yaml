@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - ''
-  - ''
+  - TAB
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT GUI}
-  - ''
+  - ''''
   - ''
   - Z
   - X
@@ -37,11 +37,11 @@ layers:
   - .
   - /
   - ''
-  - {t: TAB, h: NAV}
+  - {t: ESCAPE, h: NAV}
   - {t: SPACE, h: NUM}
   - L CLK
   - {t: RET, h: SET}
-  - {t: BACK SPACE, s: DELETE}
+  - BACK SPACE
   - R CLK
   - LALT
   - DEL
@@ -58,7 +58,7 @@ layers:
   - '*'
   - '&'
   - ''
-  - ''
+  - PRINT SCREEN
   - '1'
   - '2'
   - '3'
@@ -69,13 +69,13 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ''
+  - '|'
   - ''
   - $
   - '@'
   - '#'
-  - '"'
-  - ''''
+  - LCTRL
+  - '~'
   - _
   - '{'
   - '}'
@@ -83,10 +83,10 @@ layers:
   - \
   - ''
   - {t: ▽, type: trans}
-  - {t: NUM, type: held}
+  - {type: held}
   - {t: ▽, type: trans}
-  - ENTER
-  - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -102,12 +102,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
-  - LEFT GUI
-  - LEFT ALT
-  - LCTRL
-  - LEFT SHIFT
+  - VOL DN
+  - LEFT
+  - UP ARROW
+  - DOWN ARROW
+  - RIGHT
   - VOLUME UP
   - {t: ▽, type: trans}
   - RIGHT SHIFT
@@ -126,11 +126,11 @@ layers:
   - F8
   - F9
   - F10
+  - ''
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: NAV, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F11
   - DEV TOOLS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
