@@ -271,21 +271,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [16, 38]
-  k: R CLK
-  l: [BAS]
-- p: [38, 15]
-  k: Mid CLK
-  l: [BAS]
-- p: [19, 20, 36]
-  k: Sft+Ctl+ ESCAPE
-- p: [14, 15, 40]
-  k: Alt+Ctl+ DELETE
-- p: [37, 31, 32]
+- p: [31, 32]
   k: CAPS WORD
-- p: [2, 3]
-  k: ESCAPE
-- p: [32, 33]
-  k: ''''
-- p: [32, 31]
-  k: '"'
+- p: [38, 41]
+  k: Mid CLK
+- p: [27, 28]
+  k: CAPSLOCK
