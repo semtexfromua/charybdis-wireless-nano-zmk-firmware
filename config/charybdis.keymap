@@ -50,10 +50,9 @@
         device = <&vtrackball>;
         layers = <1>;
         evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_MISC>;
+        x-input-code = <INPUT_REL_HWHEEL>;
         y-input-code = <INPUT_REL_WHEEL>;
-        scale-divisor = <8>;
-        bindings = <&ib_wheel_scaler 1 14>;
+        bindings = <&ib_scroll_axis_lock>;
     };
 
     trackball_arrow_listener {
@@ -68,13 +67,13 @@
         bindings = <&ib_arrow_nav>; // Використовуємо наш новий behavior
     };
 
-    /* define a resolution down scaler only for INPUT_REL_WHEEL */
+    /* axis-locked scroll: accumulate raw counts, emit one tick on the
+       dominant axis only (vertical priority), reset both accumulators */
 
-    ib_wheel_scaler: ib_wheel_scaler {
-        compatible = "zmk,input-behavior-scaler";
-        #binding-cells = <2>;
-        evt-type = <INPUT_EV_REL>;
-        input-code = <INPUT_REL_WHEEL>;
+    ib_scroll_axis_lock: ib_scroll_axis_lock {
+        compatible = "zmk,input-behavior-scroll-axis-lock";
+        #binding-cells = <0>;
+        tick = <100>;
     };
 
     /* adjust cooldown waiting period for mouse key layer after activated */
