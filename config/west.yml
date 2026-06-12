@@ -25,7 +25,7 @@ manifest:
       revision: f49a5ca22a7b5626e37cffc73e97e64945bf9eb0  # main @ 2024-12-12
     - name: zmk-input-behavior-listener-custom
       remote: semtexfromua
-      revision: 97ad1b5c63094ae78b32f726e698cc903322e633  # scroll-axis-lock @ 2026-06-12 (axis-locked scroll + dead-zone fix)
+      revision: f915f593bd63c9e8b45cb763b6c87ccd6a2aa465  # scroll-axis-lock @ 2026-06-12 (axis-locked scroll + dead-zone fix + lockout-ms)
           # Додавання nice OLED модуля
     - name: zmk-nice-oled
       remote: mctechnology17

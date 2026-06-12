@@ -74,6 +74,7 @@
         compatible = "zmk,input-behavior-scroll-axis-lock";
         #binding-cells = <0>;
         tick = <100>;
+        lockout-ms = <250>;
     };
 
     /* adjust cooldown waiting period for mouse key layer after activated */
