@@ -208,6 +208,24 @@
         // Крок 4: без WIN -> morph_shift, WIN -> ЦКМ
     };
 
+    macros {
+        cmb_lte: cmb_lte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+        };
+        cmb_gte: cmb_gte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+        };
+        cmb_arrow: cmb_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -224,6 +242,27 @@
         caps_lck {
             bindings = <&kp CAPSLOCK>;
             key-positions = <27 28>;
+        };
+
+        /* arrow/comparison combos: left hand = less, right hand = greater,
+           center = annotation. base layer only, short timeout vs misfires. */
+        lte_combo {
+            bindings = <&cmb_lte>;
+            key-positions = <3 4>;
+            timeout-ms = <40>;
+            layers = <0>;
+        };
+        gte_combo {
+            bindings = <&cmb_gte>;
+            key-positions = <7 8>;
+            timeout-ms = <40>;
+            layers = <0>;
+        };
+        arrow_combo {
+            bindings = <&cmb_arrow>;
+            key-positions = <17 18>;
+            timeout-ms = <40>;
+            layers = <0>;
         };
     };
 
