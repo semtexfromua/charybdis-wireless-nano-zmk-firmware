@@ -277,12 +277,12 @@ combos:
   k: Mid CLK
 - p: [27, 28]
   k: CAPSLOCK
-- p: [3, 4]
+- p: [26, 27]
   k: '&cmb_lte'
   l: [BAS]
-- p: [7, 8]
+- p: [32, 33]
   k: '&cmb_gte'
   l: [BAS]
-- p: [17, 18]
+- p: [7, 8]
   k: '&cmb_arrow'
   l: [BAS]
