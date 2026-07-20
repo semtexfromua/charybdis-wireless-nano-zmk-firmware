@@ -57,6 +57,12 @@ class NanoLayoutTest(unittest.TestCase):
             self.assertIn(f"hold-trigger-key-positions = <{opposite_hand} THUMBS>;", body)
             self.assertIn("hold-trigger-on-release;", body)
 
+    def test_cursor_listener_is_enabled_on_base_etc_and_vou(self):
+        source = KEYMAP.read_text(encoding="utf-8")
+        listener = re.search(r"trackball_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
+        self.assertIsNotNone(listener)
+        self.assertIn("layers = <0 3 5>;", listener.group(1))
+
     def test_physical_layout_uses_five_column_transform(self):
         source = LAYOUTS.read_text(encoding="utf-8")
         self.assertIn('display-name = "Charybdis Nano 3x5";', source)
