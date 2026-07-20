@@ -47,16 +47,16 @@ layers:
   - ']'
   - '*'
   - '&'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
+  - {t: '1', h: LEFT GUI}
+  - {t: '2', h: LEFT ALT}
+  - {t: '3', h: LCTRL}
+  - {t: '4', h: LEFT SHIFT}
   - '5'
   - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: '7', h: RIGHT SHIFT}
+  - {t: '8', h: RCTRL}
+  - {t: '9', h: RIGHT ALT}
+  - {t: '0', h: RIGHT GUI}
   - '&cmb_arrow'
   - CAPS WORD
   - '#'
@@ -125,10 +125,10 @@ layers:
   - L CLK
   - '&cmb_lte'
   - '&cmb_gte'
-  - '@'
-  - $
-  - ^
-  - '|'
+  - {t: '@', h: RIGHT SHIFT}
+  - {t: $, h: RCTRL}
+  - {t: ^, h: RIGHT ALT}
+  - {t: '|', h: RIGHT WIN}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

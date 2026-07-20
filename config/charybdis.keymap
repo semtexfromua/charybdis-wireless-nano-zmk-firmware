@@ -238,7 +238,7 @@
             display-name = "NUM";
             bindings = <
   &kp MINUS     &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp EQUAL    &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK  &kp AMPERSAND
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &hsl LEFT_SHIFT NUMBER_4  &kp N5       &kp NUMBER_6     &kp N7            &kp N8             &kp N9        &kp N0
+  &hml LEFT_GUI NUMBER_1  &hml LEFT_ALT NUMBER_2  &hml LCTRL NUMBER_3  &hsl LEFT_SHIFT NUMBER_4  &kp N5       &kp NUMBER_6     &hsr RIGHT_SHIFT N7  &hmr RCTRL N8  &hmr RIGHT_ALT N9  &hmr RIGHT_GUI N0
   &cmb_arrow    &caps_word    &kp HASH              &kp DOUBLE_QUOTES         &kp SQT      &kp UNDERSCORE   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PERCENT   &kp BACKSLASH
                               &trans                &trans                    &trans       &trans           &trans
             >;

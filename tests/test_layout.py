@@ -57,6 +57,18 @@ class NanoLayoutTest(unittest.TestCase):
             self.assertIn(f"hold-trigger-key-positions = <{opposite_hand} THUMBS>;", body)
             self.assertIn("hold-trigger-on-release;", body)
 
+    def test_num_row_uses_timeless_home_row_mods(self):
+        source = KEYMAP.read_text(encoding="utf-8")
+        layer = re.search(r"\bNUM\s*\{.*?bindings\s*=\s*<(.*?)>;", source, re.DOTALL)
+        self.assertIsNotNone(layer)
+        bindings = " ".join(layer.group(1).split())
+        expected = (
+            "&hml LEFT_GUI NUMBER_1 &hml LEFT_ALT NUMBER_2 &hml LCTRL NUMBER_3 "
+            "&hsl LEFT_SHIFT NUMBER_4 &kp N5 &kp NUMBER_6 "
+            "&hsr RIGHT_SHIFT N7 &hmr RCTRL N8 &hmr RIGHT_ALT N9 &hmr RIGHT_GUI N0"
+        )
+        self.assertIn(expected, bindings)
+
     def test_etc_uses_precision_cursor_listener(self):
         source = KEYMAP.read_text(encoding="utf-8")
         listener = re.search(r"trackball_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
