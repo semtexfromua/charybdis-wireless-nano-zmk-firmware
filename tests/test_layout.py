@@ -57,11 +57,19 @@ class NanoLayoutTest(unittest.TestCase):
             self.assertIn(f"hold-trigger-key-positions = <{opposite_hand} THUMBS>;", body)
             self.assertIn("hold-trigger-on-release;", body)
 
-    def test_cursor_listener_is_enabled_on_base_etc_and_vou(self):
+    def test_etc_uses_precision_cursor_listener(self):
         source = KEYMAP.read_text(encoding="utf-8")
         listener = re.search(r"trackball_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
         self.assertIsNotNone(listener)
-        self.assertIn("layers = <0 3 5>;", listener.group(1))
+        self.assertIn("layers = <0 5>;", listener.group(1))
+        self.assertIn("scale-divisor = <6>;", listener.group(1))
+
+        precision = re.search(r"trackball_snipe_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
+        self.assertIsNotNone(precision)
+        self.assertIn("layers = <3>;", precision.group(1))
+        self.assertIn("scale-divisor = <18>;", precision.group(1))
+        self.assertNotIn("trackball_gesture_listener", source)
+        self.assertNotIn("ib_gesture_nav:", source)
 
     def test_physical_layout_uses_five_column_transform(self):
         source = LAYOUTS.read_text(encoding="utf-8")

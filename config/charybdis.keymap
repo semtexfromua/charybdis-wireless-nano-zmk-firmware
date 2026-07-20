@@ -18,7 +18,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 3 5>;
+        layers = <0 5>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -28,17 +28,17 @@
         // bindings = <&ib_toggle_layer 4>;
     };
 
-    /* input config for desktop gestures (ETC layer): ball flicks switch
-       desktops / toggle KDE Overview & Grid View */
+    /* precision cursor mode for the ETC layer */
 
-    trackball_gesture_listener {
+    trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <3>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        bindings = <&ib_gesture_nav>;
+        scale-multiplier = <1>;
+        scale-divisor = <18>;
     };
 
     /* input config for mouse scroll mode */
@@ -92,21 +92,6 @@
         rate-limit-ms = <15>;
         reset-other-axis;
         bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
-    };
-
-    /* KDE: left/right = switch desktop, up = Overview, down = Grid View */
-
-    ib_gesture_nav: ib_gesture_nav {
-        compatible = "zmk,input-behavior-move-to-keypress";
-        #binding-cells = <0>;
-        threshold = <600>;
-        rate-limit-ms = <250>;
-        reset-other-axis;
-        bindings =
-            <&kp LG(LC(RIGHT))>,
-            <&kp LG(LC(LEFT))>,
-            <&kp LG(W)>,
-            <&kp LG(G)>;
     };
 
     // ╭──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────╮
