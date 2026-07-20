@@ -69,17 +69,17 @@ class NanoLayoutTest(unittest.TestCase):
         )
         self.assertIn(expected, bindings)
 
-    def test_etc_uses_precision_cursor_listener(self):
+    def test_etc_uses_normal_cursor_speed(self):
         source = KEYMAP.read_text(encoding="utf-8")
         listener = re.search(r"trackball_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
         self.assertIsNotNone(listener)
         self.assertIn("layers = <0 5>;", listener.group(1))
         self.assertIn("scale-divisor = <6>;", listener.group(1))
 
-        precision = re.search(r"trackball_snipe_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
-        self.assertIsNotNone(precision)
-        self.assertIn("layers = <3>;", precision.group(1))
-        self.assertIn("scale-divisor = <18>;", precision.group(1))
+        etc_listener = re.search(r"trackball_snipe_listener\s*\{(.*?)\n\s*\};", source, re.DOTALL)
+        self.assertIsNotNone(etc_listener)
+        self.assertIn("layers = <3>;", etc_listener.group(1))
+        self.assertIn("scale-divisor = <6>;", etc_listener.group(1))
         self.assertNotIn("trackball_gesture_listener", source)
         self.assertNotIn("ib_gesture_nav:", source)
 
