@@ -1,8 +1,8 @@
-[![.github/workflows/build.yml](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml/badge.svg)](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml)
+[![ZMK Firmware](https://github.com/semtexfromua/charybdis-wireless-nano-zmk-firmware/actions/workflows/build.yml/badge.svg)](https://github.com/semtexfromua/charybdis-wireless-nano-zmk-firmware/actions/workflows/build.yml)
 
 ## Intro
 
-This repository offers pre-configured ZMK firmware designed for Wireless Charybdis keyboards, supporting both the ubiquitous QWERTY layout and the optimized Colemak DH layout. You can choose from two configurations:
+This repository offers pre-configured ZMK firmware designed for the 35-key Wireless Charybdis Nano, supporting both the ubiquitous QWERTY layout and the optimized Colemak DH layout. You can choose from two configurations:
 
 - Bluetooth and USB
 - Dongle
@@ -13,7 +13,7 @@ Check out the [Charybdis Mini Wireless build guide](https://github.com/280Zo/cha
 
 ## Usage
 
-If you'd like to use the pre-built firmware the files can be found in the [Actions Workflows](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions?query=is%3Acompleted+branch%3Amain). To download them, log into Github, click the link, select the latest run that passed on the main branch, and download the applicable firmware. There are five firmware artifacts to choose from. If you're unsure which one to use, you probably want the firmware-charybdis-qwerty build.
+If you'd like to use the pre-built firmware the files can be found in the [Actions Workflows](https://github.com/semtexfromua/charybdis-wireless-nano-zmk-firmware/actions?query=is%3Acompleted+branch%3Amain). To download them, log into Github, click the link, select the latest run that passed on the main branch, and download the applicable firmware. There are five firmware artifacts to choose from. If you're unsure which one to use, you probably want the firmware-charybdis-qwerty build.
 
 - **firmware-charybdis-qwerty** - Bluetooth/USB with QWERTY layout
 - **firmware-charybdis-qwerty-dongle** - Dongle with QWERTY layout

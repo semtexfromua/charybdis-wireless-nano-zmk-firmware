@@ -1,7 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BAS:
-  - ''
   - Q
   - W
   - E
@@ -12,8 +11,6 @@ layers:
   - I
   - O
   - P
-  - ''
-  - {t: TAB, h: VOU}
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
@@ -24,8 +21,6 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT GUI}
-  - ''''
-  - ''
   - Z
   - X
   - C
@@ -36,17 +31,12 @@ layers:
   - ','
   - .
   - /
-  - ''
   - {t: ESCAPE, h: NAV}
   - {t: SPACE, h: NUM}
   - L CLK
   - {t: RET, h: SET}
   - BACK SPACE
-  - R CLK
-  - ETC
-  - DEL
   NUM:
-  - ''
   - '-'
   - +
   - (
@@ -57,8 +47,6 @@ layers:
   - ']'
   - '*'
   - '&'
-  - ''
-  - PRINT SCREEN
   - '1'
   - '2'
   - '3'
@@ -69,8 +57,6 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '|'
-  - ''
   - $
   - '@'
   - '#'
@@ -81,17 +67,12 @@ layers:
   - '}'
   - '%'
   - \
-  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   NAV:
-  - ''
   - PAGE DOWN
   - HOME
   - END
@@ -102,8 +83,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - VOL DN
   - {t: LEFT GUI, h: sticky}
   - {t: LEFT ALT, h: sticky}
   - {t: LCTRL, h: sticky}
@@ -114,8 +93,6 @@ layers:
   - UP ARROW
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
-  - ''
   - F1
   - F2
   - F3
@@ -126,15 +103,11 @@ layers:
   - F8
   - F9
   - F10
-  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEV TOOLS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   ETC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,22 +139,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - R CLK
   - {t: ▽, type: trans}
   - L CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
   SET:
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BOOT LDR
@@ -192,8 +155,6 @@ layers:
   - BOOT LDR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -205,9 +166,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,24 +179,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   VOU:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -271,18 +217,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [31, 32]
-  k: CAPS WORD
-- p: [38, 41]
-  k: Mid CLK
-- p: [27, 28]
-  k: CAPSLOCK
 - p: [26, 27]
+  k: CAPS WORD
+- p: [22, 23]
+  k: CAPSLOCK
+- p: [21, 22]
   k: '&cmb_lte'
   l: [BAS]
-- p: [32, 33]
+- p: [27, 28]
   k: '&cmb_gte'
   l: [BAS]
-- p: [7, 8]
+- p: [6, 7]
   k: '&cmb_arrow'
   l: [BAS]
