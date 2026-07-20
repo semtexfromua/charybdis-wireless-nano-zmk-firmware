@@ -237,10 +237,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &kp MINUS     &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK  &kp AMPERSAND
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4           &kp N5       &kp NUMBER_6     &kp N7            &kp N8             &kp N9        &kp N0
-  &cmb_arrow    &caps_word    &kp HASH              &kp DOUBLE_QUOTES      &kp SQT      &kp UNDERSCORE   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PERCENT   &kp BACKSLASH
-                              &trans                &trans                 &trans       &trans           &trans
+  &kp MINUS     &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp EQUAL    &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK  &kp AMPERSAND
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &hsl LEFT_SHIFT NUMBER_4  &kp N5       &kp NUMBER_6     &kp N7            &kp N8             &kp N9        &kp N0
+  &cmb_arrow    &caps_word    &kp HASH              &kp DOUBLE_QUOTES         &kp SQT      &kp UNDERSCORE   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PERCENT   &kp BACKSLASH
+                              &trans                &trans                    &trans       &trans           &trans
             >;
         };
 
@@ -257,9 +257,9 @@
         ETC {
             display-name = "ETC";
             bindings = <
-  &trans  &trans     &trans     &trans     &trans       &trans    &trans       &trans      &trans     &trans
-  &trans  &mkp MCLK  &mkp RCLK  &mkp LCLK  &cmb_lte     &cmb_gte  &kp AT_SIGN  &kp DOLLAR  &kp CARET  &kp PIPE
-  &trans  &trans     &trans     &trans     &trans       &trans    &trans       &trans      &trans     &trans
+  &trans  &trans     &trans     &trans     &trans       &trans    &trans                    &trans             &trans                &trans
+  &trans  &mkp MCLK  &mkp RCLK  &mkp LCLK  &cmb_lte     &cmb_gte  &hsr RIGHT_SHIFT AT_SIGN  &hmr RCTRL DOLLAR  &hmr RIGHT_ALT CARET  &hmr RIGHT_WIN PIPE
+  &trans  &trans     &trans     &trans     &trans       &trans    &trans                    &trans             &trans                &trans
                      &mkp RCLK  &trans     &mkp LCLK    &trans    &trans
             >;
         };
